@@ -45,4 +45,17 @@ nav a {
     padding: 20px;
 }
 
+/* Styling for the selling sentence section */
+.selling-sentence {
+    background-color: #A0006D;
+    padding: 50px;
+    color: #FFF;
+    text-align: center;
+}
+
+.selling-sentence h1 {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
 /* Add your additional styling here */

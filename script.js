@@ -1,17 +1,17 @@
-// JavaScript code for smooth scroll to anchor
-document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
-        link.addEventListener("click", function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute("href"));
-            if (target) {
-                const offsetTop = target.getBoundingClientRect().top + window.pageYOffset;
-                window.scroll({
-                    top: offsetTop,
-                    behavior: "smooth"
-                });
-            }
-        });
+// Smooth scroll to anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+  
+      const target = document.querySelector(this.getAttribute('href'));
+      const offset = 50;
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - offset;
+  
+      window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     });
-});
+  });
+  

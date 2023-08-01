@@ -5,7 +5,7 @@ body {
   }
   
   nav {
-    background-color: #ffffff;
+    background-color: #fff;
     text-align: center;
     padding: 10px 0;
   }
@@ -17,7 +17,6 @@ body {
   }
   
   .menu li {
-    color:#34046e;
     display: inline-block;
     margin-right: 20px;
   }
@@ -27,7 +26,7 @@ body {
   }
   
   .menu li a {
-    color: #fff;
+    color: #4a148c;
     text-decoration: none;
     padding: 5px 10px;
   }
@@ -38,7 +37,6 @@ body {
   
   section {
     height: 100vh;
-    background-image: url('website3.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -46,6 +44,20 @@ body {
     padding: 50px;
     color: #fff;
   }
+  
+  .background-section:nth-child(1) {
+    background-image: url('website3.png'); /* Background image for the first section */
+  }
+  
+  .background-section:nth-child(2) {
+    background-image: url('webiste6.png'); /* Background image for the second section */
+  }
+  
+  .background-section:nth-child(3) {
+    background-image: url('website4.png'); /* Background image for the third section */
+  }
+  
+  /* Add more rules for other sections if needed */
   
   #home {
     /* Your styles for Home Page section goes here */

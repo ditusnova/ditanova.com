@@ -77,7 +77,10 @@ body {
   /* Add more rules for other sections if needed */
   
   #home {
-    /* Your styles for Home Page section goes here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   
   #about {

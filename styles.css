@@ -8,10 +8,10 @@ body {
     background-color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed; /* Add fixed position */
-    top: 0; /* Add top position */
-    width: 100%; /* Add full width */
-    z-index: 999; /* Add a higher z-index to make sure it stays on top */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
   }
   
   .menu {
@@ -44,59 +44,24 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     padding: 50px;
     color: #fff;
   }
-  .background-section:nth-child(1) {
-    background-image: url('website3.png'); /* Background image for the first section */
-  }
-  .background-section:nth-child(2) {
-    background-image: url('website3.png'); /* Background image for the first section */
-  }
-  
-  .background-section:nth-child(3) {
-    background-image: url('webiste6.png'); /* Background image for the second section */
-  }
-  
-  .background-section:nth-child(4) {
-    background-image: url('website4.png'); /* Background image for the third section */
-  }
-  
-  .background-section:nth-child(5) {
-    background-image: url('website7.png'); /* Background image for the third section */
-  }
-
-  .background-section:nth-child(6) {
-    background-image: url('website8.png'); /* Background image for the third section */
-  }
-
-  .background-section:nth-child(7) {
-    background-image: url('website9.png'); /* Background image for the third section */
-  }
-  /* Add more rules for other sections if needed */
   
   #home {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #home {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; /* Align the content to the bottom of the section */
+    align-items: flex-end;
   }
   
   .hero-content {
-    display: flex; /* Display the points in a row */
-    justify-content: space-between; /* Distribute points horizontally */
-    width: 70%; /* Adjust the width of the hero-content */
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
   }
   
   .hero-point {
-    flex-basis: 30%; /* Adjust the width of each point */
+    flex-basis: 30%;
   }
   
   .hero-title {
@@ -122,35 +87,25 @@ body {
   .cta-button:hover {
     background-color: #5c0c93;
   }
- 
-  #about {
-    /* Your styles for About Me section goes here */
-  }
-  
-  #services {
-    /* Your styles for Services section goes here */
-  }
-  
-  #portfolio {
-    /* Your styles for Portfolio section goes here */
-  }
-  
-  #blog {
-    /* Your styles for Blog section goes here */
-  }
-  
-  #contact {
-    /* Your styles for Contact section goes here */
-  }
-  
-  #resume {
-    /* Your styles for Resume/CV section goes here */
-  }
   
   footer {
-    background-color: #ffffff;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
+  }
+  
+  .footer-content {
+    font-size: 1.2rem;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-content ul li {
+    margin-bottom: 10px;
   }
   

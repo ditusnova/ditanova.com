@@ -48,23 +48,32 @@ body {
     padding: 50px;
     color: #fff;
   }
-  
   .background-section:nth-child(1) {
     background-image: url('website3.png'); /* Background image for the first section */
   }
-  
   .background-section:nth-child(2) {
-    background-image: url('webiste6.png'); /* Background image for the second section */
+    background-image: url('website3.png'); /* Background image for the first section */
   }
   
   .background-section:nth-child(3) {
-    background-image: url('website4.png'); /* Background image for the third section */
+    background-image: url('webiste6.png'); /* Background image for the second section */
   }
   
   .background-section:nth-child(4) {
+    background-image: url('website4.png'); /* Background image for the third section */
+  }
+  
+  .background-section:nth-child(5) {
     background-image: url('website7.png'); /* Background image for the third section */
   }
 
+  .background-section:nth-child(6) {
+    background-image: url('website8.png'); /* Background image for the third section */
+  }
+
+  .background-section:nth-child(7) {
+    background-image: url('website9.png'); /* Background image for the third section */
+  }
   /* Add more rules for other sections if needed */
   
   #home {

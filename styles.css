@@ -65,8 +65,11 @@ body {
   }
   
   .hero-title {
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #FF5841; /* Sunset orange */
+    text-shadow: 1px 2px 2px #C53678; /* Red-violet shadow with offset */
   }
   
   .tagline {

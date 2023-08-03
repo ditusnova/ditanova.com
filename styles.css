@@ -90,7 +90,6 @@ body {
   .cta-button:hover {
     background-color: #5c0c93;
   }
-  
   footer {
     background-color: #333;
     color: #fff;
@@ -99,7 +98,8 @@ body {
   }
   
   .footer-content {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Smaller font size for the contact information */
+    text-align: left; /* Align the contact information to the left */
   }
   
   .footer-content ul {
@@ -109,6 +109,7 @@ body {
   }
   
   .footer-content ul li {
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Adjust the space between each contact detail */
   }
+  
   

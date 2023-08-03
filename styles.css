@@ -111,5 +111,15 @@ body {
   .footer-content ul li {
     margin-bottom: 5px; /* Adjust the space between each contact detail */
   }
+  .linkedin-logo {
+    width: 30px; /* Adjust the width of the logo as needed */
+    height: 30px; /* Adjust the height of the logo as needed */
+    margin-top: 10px; /* Adjust the vertical spacing of the logo */
+    transition: filter 0.3s ease;
+  }
+  
+  .linkedin-logo:hover {
+    filter: brightness(120%); /* Apply a hover effect to change the color */
+  }
   
   

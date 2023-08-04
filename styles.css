@@ -1,10 +1,46 @@
-body {
+@font-face {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('font/AlegreyaSans-Bold.woff2') format('woff2'),
+         url('font/AlegreyaSans-Bold.woff') format('woff');
+  }
+  
+  /* Load the Roboto font for body text */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('font/Roboto-Regular.woff2') format('woff2'),
+         url('font/AlegreyaSans-Regular.woff') format('woff');
+  }
+  
+  /* Load the Alegreya Sans Semibold font for callouts */
+  @font-face {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('font/AlegreyaSans-Light.woff2') format('woff2'),
+         url('font/AlegreyaSans-Light.woff') format('woff');
+  }
+  
+  /* Load the Roboto Light font for navigation text */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('font/Roboto-Light.woff2') format('woff2'),
+         url('font/Roboto-Light.woff') format('woff');
+  }
+  
+  body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif; /* Fallback to Arial if Roboto is not available */
   }
   
   nav {
+    font-family: 'Roboto Light', Arial, sans-serif;
     background-color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -38,16 +74,15 @@ body {
   .menu li a:hover {
     background-color: #eee;
   }
-  
   section {
     height: 100vh;
+    background-image: url('website3.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 50px;
     color: #000;
-  }
-  
+  }  
   #home {
     display: flex;
     justify-content: center;
@@ -65,14 +100,16 @@ body {
   }
   
   .hero-title {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Alegreya Sans', Arial, sans-serif;
     font-size: 2.5rem;
+    font-weight: 700;
     margin-bottom: 10px;
-    color: #FF5841; /* Sunset orange */
-    text-shadow: 1px 2px 2px #C53678; /* Red-violet shadow with offset */
+    color: #FF5841;
+    text-shadow: 1px 2px 2px #C53678;
   }
   
   .tagline {
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 1.2rem;
     margin-bottom: 10px;
   }
@@ -80,16 +117,17 @@ body {
   .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4a148c;
-    color: #fff;
+    background-color: #C53678;
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
   
   .cta-button:hover {
-    background-color: #5c0c93;
+    background-color: #C53678;
   }
+  
   footer {
     background-color: #333;
     color: #fff;
@@ -98,8 +136,9 @@ body {
   }
   
   .footer-content {
-    font-size: 1rem; /* Smaller font size for the contact information */
-    text-align: left; /* Align the contact information to the left */
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    text-align: left;
   }
   
   .footer-content ul {
@@ -109,17 +148,17 @@ body {
   }
   
   .footer-content ul li {
-    margin-bottom: 5px; /* Adjust the space between each contact detail */
+    margin-bottom: 5px;
   }
+  
+  /* LinkedIn logo styles */
   .linkedin-logo {
-    width: 30px; /* Adjust the width of the logo as needed */
-    height: 30px; /* Adjust the height of the logo as needed */
-    margin-top: 10px; /* Adjust the vertical spacing of the logo */
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
     transition: filter 0.3s ease;
   }
   
   .linkedin-logo:hover {
-    filter: brightness(120%); /* Apply a hover effect to change the color */
+    filter: brightness(120%);
   }
-  
-  

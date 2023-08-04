@@ -125,7 +125,7 @@
     text-align: center;
     padding: 10px;
     /* Update to set a smaller background for the footer */
-    height: 80px;
+    height: 70px;
   }
   
   .footer-content {
@@ -153,14 +153,22 @@
     transition: filter 0.3s ease;
   }
   
+  /* Use the black version of the logos by default */
+  .social-icon.linkedin {
+    background-image: url('linkedin-icon.png');
+  }
+  
+  .social-icon.pinterest {
+    background-image: url('pinterestlogo.png');
+  }
+  
+  /* Change to the colored versions of the logos when hovering over them */
   .social-icon.linkedin:hover {
-    /* Use LinkedIn blue as the background color when hovering over the LinkedIn logo */
-    background-color: #0077B5;
+    background-image: url('linkedinlogoB.png');
   }
   
   .social-icon.pinterest:hover {
-    /* Use Pinterest red as the background color when hovering over the Pinterest logo */
-    background-color: #BD081C;
+    background-image: url('pinterestlogoR.png');
   }
   
   .social-icon:hover {
@@ -168,9 +176,9 @@
   }
   
   .latest-posts {
-    text-align: left;
-    /* Adjust margin to move the blog posts more towards the left */
-    margin-left: 5px;
+    text-align: right; /* Align the blog posts slightly to the right */
+    /* Adjust margin to move the blog posts slightly towards the right */
+    margin-right: 5px;
   }
   
   .latest-posts h3 {
@@ -187,8 +195,11 @@
   .latest-posts li {
     margin-bottom: 5px;
   }
-  
+
+  .footer-content .copyright {
+    text-align: left;
   /* Ensure the copyright year is visible */
+  
   #current-year {
     color: #fff;
   }

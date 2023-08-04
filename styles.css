@@ -157,6 +157,7 @@
   
   .latest-posts {
     text-align: left;
+    margin-left: 20px;
   }
   
   .latest-posts h3 {
@@ -172,4 +173,7 @@
   .latest-posts li {
     margin-bottom: 5px;
   }
-  
+
+  #current-year {
+    color: #fff;
+  }

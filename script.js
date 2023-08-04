@@ -12,3 +12,7 @@ hireMeButton.addEventListener('click', function (e) {
 
   window.location.href = mailtoLink;
 });
+
+// Get the current year and update the footer's copyright notice
+const currentYear = new Date().getFullYear();
+document.getElementById("current-year").textContent = currentYear;

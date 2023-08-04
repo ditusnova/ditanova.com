@@ -198,9 +198,9 @@
 
   .footer-content .copyright {
     text-align: left;
-    }
-  /* Ensure the copyright year is visible */
-
+    color: #fff; /* Set the text color of the copyright to white */
+  }
+  
   #current-year {
     color: #fff;
   }

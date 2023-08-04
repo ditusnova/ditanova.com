@@ -153,16 +153,15 @@
     transition: filter 0.3s ease;
   }
   
-  .social-icon.linkedin {
+  .social-icon.linkedin:hover {
     /* Use LinkedIn blue as the background color when hovering over the LinkedIn logo */
     background-color: #0077B5;
   }
   
-  .social-icon.pinterest {
+  .social-icon.pinterest:hover {
     /* Use Pinterest red as the background color when hovering over the Pinterest logo */
     background-color: #BD081C;
   }
-
   .social-icon:hover {
     filter: brightness(120%);
   }

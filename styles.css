@@ -142,12 +142,14 @@
   .social-icons {
     display: flex;
     align-items: center;
+    flex-grow: 1; /* Expand to fill the available space */
+    justify-content: center; /* Center the logos horizontally */
   }
   
   .social-icon {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+    margin: 0 10px; /* Add some spacing between the logos */
     transition: filter 0.3s ease;
   }
   

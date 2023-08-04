@@ -198,8 +198,9 @@
 
   .footer-content .copyright {
     text-align: left;
+    }
   /* Ensure the copyright year is visible */
-  
+
   #current-year {
     color: #fff;
   }

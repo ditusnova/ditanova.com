@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const pinterestIcon = document.querySelector(".pinterest-icon");
 
     linkedinIcon.addEventListener("mouseover", function() {
-        linkedinIcon.style.backgroundImage = "url('linkedin-blue.png')";
+        linkedinIcon.style.backgroundImage = "url('linkedinlogoB.png')";
     });
 
     linkedinIcon.addEventListener("mouseout", function() {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     pinterestIcon.addEventListener("mouseover", function() {
-        pinterestIcon.style.backgroundImage = "url('pinterest-red.png')";
+        pinterestIcon.style.backgroundImage = "url('pinterestlogoR.png')";
     });
 
     pinterestIcon.addEventListener("mouseout", function() {

@@ -37,7 +37,7 @@
     padding: 0;
     font-family: "Alegreya Sans", sans-serif;
     color: black;
-    background-image: url("website3.png");
+    background-image: url("background1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,7 +55,24 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.btn {
+    display: inline-block;
+    background-color: #C53678;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.btn:hover {
+    background-color: #FF5841;
+    transform: scale(1.05);
+}
+.menu {
+    text-align: center;
+}
 .menu ul {
     list-style: none;
     margin: 0;
@@ -71,6 +88,7 @@ header {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    transition: font-weight 0.3s ease;
 }
 
 .cta {
@@ -83,7 +101,19 @@ header {
     text-decoration: none;
     border-radius: 5px;
 }
+.menu a:hover {
+    font-weight: bold;
+}
 
+.hero {
+    /* ... Existing styles ... */
+    text-align: center; /* Center align the hero text */
+}
+
+/* New styles for hero text */
+.hero .centered {
+    top: 50%; /* Change from 30% to 50% to center vertically */
+}
 .hero {
     height: 60vh;
     display: flex;

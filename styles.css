@@ -138,6 +138,18 @@ p {
 .sections p {
     font-size: 1.1rem;
 }
+.centered.sections {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.centered.sections section {
+    width: 30%;
+}
 
 footer {
     position: fixed;

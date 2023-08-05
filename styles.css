@@ -77,6 +77,24 @@
   .menu li a:hover {
     background-color: #eee;
   }
+  
+  .hire-button {
+    position: fixed;
+    bottom: 8px;
+    right: 20px;
+    background-color: #C53678;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 999; /* Ensure the button appears on top of other elements */
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  .hire-button:hover {
+    background-color: #E979A3;
+  }
+  
   section {
     height: 100vh;
     background-image: url('website3.png');
@@ -149,7 +167,7 @@
     font-family: 'Roboto', sans-serif; /* Use Roboto Regular for the section text */
     font-size: 16px; /* Set the font size to 16px */
   }
-  
+
   .footer-content {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 0.9rem;

@@ -177,15 +177,30 @@ footer p {
     height: 30px;
     margin: 0 5px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
-
+.social-icons a {
+    width: 30px;
+    height: 30px;
+}
 .linkedin-icon {
     background-image: url("linkedin-icon.png");
 }
 
 .pinterest-icon {
     background-image: url("pinterestlogo.png");
+}
+
+.social-icons a:hover {
+    background-image: none;
+}
+
+.linkedin-icon:hover {
+    background-image: url("linkedinlogoB.png");
+}
+
+.pinterest-icon:hover {
+    background-image: url("pinterestlogoR.png");
 }
 
 @media screen and (max-width: 768px) {

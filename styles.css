@@ -169,11 +169,11 @@ footer p {
 }
 
 .linkedin-icon {
-    background-image: url("linkedin-black.png");
+    background-image: url("linkedin-icon.png");
 }
 
 .pinterest-icon {
-    background-image: url("pinterest-black.png");
+    background-image: url("pinterestlogo.png");
 }
 
 @media screen and (max-width: 768px) {

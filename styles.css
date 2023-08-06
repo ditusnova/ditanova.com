@@ -41,16 +41,17 @@
   
   nav {
     font-family: 'Roboto Light', Arial, sans-serif;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); 
     text-align: center;
     padding: 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
-    position: relative;
   }
   
+  /* MENU */
+
   .menu {
     list-style: none;
     display: flex;
@@ -63,6 +64,7 @@
   .menu li {
     display: inline-block;
     margin-right: 20px;
+    padding-top: 10px;
   }
   
   .menu li:last-child {
@@ -79,6 +81,8 @@
     background-color: #eee;
   }
   
+  /* MENU */
+
   .hire-button {
     position: absolute;
     top:10px;

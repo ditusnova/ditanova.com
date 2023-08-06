@@ -107,9 +107,10 @@ header {
     border-radius: 5px;
 }
 .cta:hover {
-    background-color: ##C53678;
+    background-color: #C53678;
     transform: scale(1.05);
 }
+
 .menu a:hover {
     font-weight: bold;
 }

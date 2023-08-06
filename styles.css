@@ -71,8 +71,13 @@ header {
     transform: scale(1.05);
 }
 .menu {
-    text-align: center;
-}
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}  
 .menu ul {
     list-style: none;
     margin: 0;
@@ -129,7 +134,7 @@ header {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.2;
     color: #C53678;
 }
@@ -147,6 +152,12 @@ p {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #FF5841;
+    transform: scale(1.05);
 }
 
 .sections {
@@ -233,17 +244,55 @@ footer p {
     background-image: url("pinterestlogoR.png");
 }
 
+/* ... Existing styles ... */
+
+/* Media query for tablet screens */
 @media screen and (max-width: 768px) {
+    .centered {
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
     .sections {
         flex-wrap: wrap;
     }
-    
+
     .sections section {
         width: 100%;
         margin-bottom: 30px;
     }
-    
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
     .centered {
-        top: 20%;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sections section {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    footer {
+        padding: 5px;
     }
 }
+
+/* ... Existing styles ... */
+

@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 400;
     src: url('font/Roboto-Regular.woff2') format('woff2'),
-         url('font/AlegreyaSans-Regular.woff') format('woff');
+         url('font/Roboto-Regular.woff') format('woff');
   }
   
   /* Load the Alegreya Sans Semibold font for callouts */
@@ -48,6 +48,7 @@
     top: 0;
     width: 100%;
     z-index: 999;
+    position: relative;
   }
   
   .menu {
@@ -79,8 +80,8 @@
   }
   
   .hire-button {
-    position: fixed;
-    bottom: 8px;
+    position: absolute;
+    top:10px;
     right: 20px;
     background-color: #C53678;
     color: #fff;

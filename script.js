@@ -1,24 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Set the current year in the footer
-    document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Add hover effect to social media icons
-    const linkedinIcon = document.querySelector(".linkedin-icon");
-    const pinterestIcon = document.querySelector(".pinterest-icon");
+  
+const hireMeButton = document.querySelector('.hire-button');
+hireMeButton.addEventListener('click', function (e) {
+  e.preventDefault();
 
-    linkedinIcon.addEventListener("mouseover", function() {
-        linkedinIcon.style.backgroundImage = "url('linkedinlogoB.png')";
-    });
+  // Change "your_email@example.com" to your actual email address
+  const email = 'your_email@example.com';
+  const subject = 'Hiring Inquiry';
 
-    linkedinIcon.addEventListener("mouseout", function() {
-        linkedinIcon.style.backgroundImage = "url('linkedin-black.png')";
-    });
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 
-    pinterestIcon.addEventListener("mouseover", function() {
-        pinterestIcon.style.backgroundImage = "url('pinterestlogoR.png')";
-    });
-
-    pinterestIcon.addEventListener("mouseout", function() {
-        pinterestIcon.style.backgroundImage = "url('pinterest-black.png')";
-    });
+  window.location.href = mailtoLink;
 });
+
+// Get the current year and update the footer's copyright notice
+const currentYear = new Date().getFullYear();
+document.getElementById("current-year").textContent = currentYear;

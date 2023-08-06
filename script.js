@@ -15,4 +15,4 @@ hireMeButton.addEventListener('click', function (e) {
 
 // Get the current year and update the footer's copyright notice
 const currentYear = new Date().getFullYear();
-document.getElementById("current-year").textContent = currentYear;
+  document.querySelector(".current-year").textContent = currentYear;

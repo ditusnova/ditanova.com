@@ -163,9 +163,11 @@
 
 /* HERO SEKCE*/
 
+
   .services-table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 50px;
   }
   
   .services-table td {

@@ -37,11 +37,11 @@
     color: black;
     margin: 0;
     padding: 0;
+    background: linear-gradient(white, #C53678);
   }
   
   header {
     position: relative;
-    background: linear-gradient(white, #C53678);
     padding: 20px;
   }
   

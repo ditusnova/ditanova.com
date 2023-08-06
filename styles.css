@@ -23,7 +23,14 @@
     src: url('font/AlegreyaSans-Light.woff2') format('woff2'),
          url('font/AlegreyaSans-Light.woff') format('woff');
   }
-  
+  @font-face {
+    font-family: 'Alegreya Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('font/AlegreyaSans-Italic.woff2') format('woff2'),
+         url('font/AlegreyaSans-Italic.woff') format('woff');
+  }
+
   /* Load the Roboto Light font for navigation text */
   @font-face {
     font-family: 'Roboto';
@@ -32,6 +39,7 @@
     src: url('font/Roboto-Light.woff2') format('woff2'),
          url('font/Roboto-Light.woff') format('woff');
   }
+  
   
   body {
     margin: 0;
@@ -96,7 +104,8 @@
   }
   
   .hire-button:hover {
-    background-color: #E979A3;
+    background-color: #FF5841;
+    transform: scale(1.05);
   }
 
    /* MENU */
@@ -120,7 +129,7 @@
 /* HERO SEKCE*/
 .hero-content {
     position: absolute;
-    top: 60px; /* Adjust the top position to leave space below the menu */
+    top: 100px; /* Adjust the top position to leave space below the menu */
     left: 20px; /* Adjust the left position to align to the left corner */
   }
   
@@ -130,20 +139,21 @@
   }
   
   .hero-content td {
-    padding: 10px;
+    padding: 20px 10px;
   }
   
   .hero-title {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 3rem;
     font-weight: 700;
-    color: #FF5841;
+    color: #C53678;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
   
   .tag-line {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    font-style: italic;
     color: black;
   }
 
@@ -151,28 +161,38 @@
     display: inline-block;
     padding: 10px 20px;
     background-color: #C53678;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    font-family: 'Roboto', Arial, sans-serif;
     transition: background-color 0.3s ease;
   }
   
   .cta-button:hover {
-    background-color: #C53678;
+    background-color: #FF5841;
+    transform: scale(1.05);
   }
 
 /* HERO SEKCE*/
 
-
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   .services-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 50px;
+    margin-top: -400px;
+    position: relative;
+    z-index: 1;
   }
   
   .services-table td {
     padding: 20px;
-    text-align: center;
+    text-align: center !important;
+    vertical-align: top; 
+    width: 33.33%; 
   }
   
   .services-table img {
@@ -180,77 +200,118 @@
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
   }
+  .services-table img:hover {
+    transform: scale(1.1); 
+  }
+  .services-table h2 {
+    margin-bottom: 10px;
+    text-align: center !important;
+    vertical-align: top;
+  }
+  .services-table p {
+    margin-bottom: 10px;
+    text-align: center !important;
+    vertical-align: top;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+  }
+
+  /*.services-table p {
+    line-height: 1.6;
+    max-width: 300px;
+    text-align: center !important;
+    vertical-align: top;
+  }  */
+
+  /*FOOTER*/
+
   footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     /* Update to set a smaller background for the footer */
     height: 70px;
   }
   
   .footer-content {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center;
-    /* Adjust padding to create space between the logos and blog posts */
-    padding: 0 20px;
+    font-size: 14px;
   }
   
-  .social-icons {
-    display: flex;
-    align-items: center;
-    /* Update to center the logos within the footer */
-    flex-grow: 1; /* Expand to fill the available space */
-    justify-content: center; /* Center the logos horizontally */
+  table {
+    width: 100%;
   }
   
-  .social-icon {
-    width: 30px;
-    height: 30px;
+  td {
+    padding: 10px;
+  }
+  /* ICONS*/
+  .social-logos {
+    display: flex; /* Use flexbox to center the icons */
+    align-items: center; /* Vertically center the icons */
+    
+  
+  }
+  .social-logos a {
+    width: 50px;
+    height: 50px;
     margin: 0 10px; /* Add some spacing between the logos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: filter 0.3s ease;
+    background-size: 50px 50px; /* Specify the size of the logo */
   }
   
-  /* Use the black version of the logos by default */
-  .social-icon.linkedin {
-    background-image: url('linkedin-icon.png');
+  .social-logos a.linkedin {
+    background-image: url('linkedin-logo-black.png');
   }
   
-  .social-icon.pinterest {
-    background-image: url('pinterestlogo.png');
+  .social-logos a.pinterest {
+    background-image: url('pinterest-logo-black.png');
   }
   
   /* Change to the colored versions of the logos when hovering over them */
-  .social-icon.linkedin:hover {
+  .social-logos a.linkedin:hover {
     background-image: url('linkedinlogoB.png');
   }
   
-  .social-icon.pinterest:hover {
+  .social-logos a.pinterest:hover {
     background-image: url('pinterestlogoR.png');
   }
   
-  .social-icon:hover {
+  .social-logos a:hover {
     filter: brightness(120%);
   }
+  .footer-text:first-child {
+    text-align: left;
+  }
+  
+  .footer-text:last-child {
+    text-align: right;
+  }  
 
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
+/* Flexbox for centering the table content */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  /* Adjust the layout for smaller screens */
+  .services-table td {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
-  
-  .current-year {
-    font-weight: bold;
+
+  .main-container {
+    flex-direction: column;
   }
-  
-  .social-logos .logo {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-  }
+}

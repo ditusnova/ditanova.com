@@ -235,32 +235,20 @@
     filter: brightness(120%);
   }
   
-  .latest-posts {
-    text-align: right; /* Align the blog posts slightly to the right */
-    /* Adjust margin to move the blog posts slightly towards the right */
-    margin-right: 5px;
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF5841;
+    padding: 10px;
   }
   
-  .latest-posts h3 {
-    margin-bottom: 10px;
-    color: #fff; /* Set the text color of the blog posts to white */
+  .current-year {
+    font-weight: bold;
   }
   
-  .latest-posts ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .latest-posts li {
-    margin-bottom: 5px;
-  }
-
-  .footer-content .copyright {
-    text-align: left;
-    color: #000; /* Set the text color of the copyright to white */
-  }
-
-  #current-year {
-    color: #000;
+  .social-logos .logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
   }

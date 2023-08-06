@@ -80,8 +80,7 @@
   .menu li a:hover {
     background-color: #eee;
   }
-  
-  /* MENU */
+
 
   .hire-button {
     position: absolute;
@@ -99,7 +98,9 @@
   .hire-button:hover {
     background-color: #E979A3;
   }
-  
+
+   /* MENU */
+
   section {
     height: 100vh;
     background-image: url('web1.png');
@@ -115,26 +116,38 @@
     justify-content: flex-start; /* Align content to the left */
     align-items: flex-end;
   }
-  .hero-content {
-    text-align: center; /* Center the hero content */
-    padding-top: 50px; /* Add top padding to move the content below the menu */
+
+/* HERO SEKCE*/
+.hero-content {
+    position: absolute;
+    top: 60px; /* Adjust the top position to leave space below the menu */
+    left: 20px; /* Adjust the left position to align to the left corner */
   }
-  .tag-line {
-    font-family: 'Roboto', sans-serif; /* Use Roboto Regular for the tag line */
-    font-size: 16px; /* Set the font size to 16px */
-    color: black; /* Change the tag line color to black */
+  
+  .hero-content table {
+    text-align: left; /* Align the text to the left within the table */
+    border-collapse: collapse;
+  }
+  
+  .hero-content td {
+    padding: 10px;
   }
   
   .hero-title {
     font-family: 'Roboto', Arial, sans-serif;
-    font-size: 3rem; /* Larger font size */
+    font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 20px; /* Increased margin to create space between lines */
-    color: #FF5841; /* Different color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow for emphasis */
+    color: #FF5841;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   }
-   
-  .cta-button {
+  
+  .tag-line {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: black;
+  }
+
+     .cta-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #C53678;
@@ -147,6 +160,9 @@
   .cta-button:hover {
     background-color: #C53678;
   }
+
+/* HERO SEKCE*/
+
   .services-table {
     width: 100%;
     border-collapse: collapse;
